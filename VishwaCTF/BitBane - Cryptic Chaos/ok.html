@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Purchase</title>
+    <meta
+      http-equiv="Content-Type"
+      content="text/html;
+         charset=iso-8859-1"
+    />
+  </head>
+  <body>
+    <h2>Book Purchase Form</h2>
+    <form action=" " method="post">
+      <label>Book Title:</label><br />
+      <input
+        type="text"
+        id="book_title"
+        name="book_title"
+        required
+      /><br /><br />
+
+      <label>Your Name:</label><br />
+      <input type="text" id="user_name" name="user_name" required /><br /><br />
+
+      <label>Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label>Shipping Address:</label><br />
+      <textarea id="address" name="address" required></textarea><br /><br />
+
+      <label>Order Date:</label><br />
+      <input type="date" id="order_date" name="order_date" /><br /><br />
+
+      <label>Price:</label><br />
+      <input type="number" id="price" name="price" /><br /><br />
+
+      <input type="submit" value="Purchase" />
+    </form>
+  </body>
+</html>

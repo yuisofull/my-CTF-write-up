@@ -1,0 +1,6 @@
+r.sendline(msg+b'b'*3 + len(msg+b'b'*3).to_bytes(16, "big") +xor(xor(cipherBlock1,cipherBlock2),b'\0'*16))
+# # 1stblock = enc(iv ^ msg2)
+# # 2ndblock = enc(1stblock)
+# r.sendline(tag)
+# print(r.recv())
+# print(r.recv())
