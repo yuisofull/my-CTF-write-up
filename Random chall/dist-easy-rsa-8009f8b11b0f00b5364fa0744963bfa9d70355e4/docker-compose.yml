@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  easy-rsa:
+    build: ./
+    volumes:
+      - ./share:/home/easyRSA:ro
+      - ./xinetd:/etc/xinetd.d/easyRSA:ro
+    ports:
+      - "7001:7001"

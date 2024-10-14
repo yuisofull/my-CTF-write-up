@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  zkp:
+    build: ./
+    volumes:
+      - ./share:/home/zkp:ro
+      - ./xinetd:/etc/xinetd.d/zkp:ro
+    ports:
+      - "7002:7002"

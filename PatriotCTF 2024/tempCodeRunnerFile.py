@@ -1,0 +1,1 @@
+strxor(cipher.decode('hex'),key)

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  md5-encryption:
+    build: ./
+    volumes:
+      - ./share:/home/md5Encryption:ro
+      - ./xinetd:/etc/xinetd.d/md5Encryption:ro
+    ports:
+      - "7003:7003"

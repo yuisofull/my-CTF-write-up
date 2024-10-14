@@ -1,0 +1,12 @@
+service md5Encryption
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/md5Encryption/md5_encryption.py
+        socket_type = stream
+        protocol = tcp
+        user = md5Encryption
+        port = 7003
+        flags = REUSE
+}

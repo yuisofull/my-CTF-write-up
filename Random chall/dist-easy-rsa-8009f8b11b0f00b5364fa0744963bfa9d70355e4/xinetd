@@ -1,0 +1,12 @@
+service easyRSA
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/easyRSA/easyRSA.py
+        socket_type = stream
+        protocol = tcp
+        user = easyRSA
+        port = 7001
+        flags = REUSE
+}

@@ -1,0 +1,12 @@
+service zkp
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/zkp/zkp.py
+        socket_type = stream
+        protocol = tcp
+        user = zkp
+        port = 7002
+        flags = REUSE
+}
